@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录 — D1商城后台管理系统 </title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+
+  <body class="login">
+    <div>
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form>
+              <h1>管理员登录</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="管理员登录名" required id="uname"/>
+              </div>
+
+              <div>
+                <input type="password" class="form-control" placeholder="管理员登录密码" required id="upwd"/>
+              </div>
+ <!--新添加功能:验证码             -->
+              <div>
+              <img id="setYzm"  title="看不清点击换一张" src="data/00_code_gg.php" />
+              <input id="yzm" type="text" class="form-control" placeholder="请输入验证码" required />
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="#" id="btn">&nbsp;登&nbsp;录&nbsp;</a>
+              </div>
+              <div class="clearfix"></div>
+              <div class="separator">
+                <div class="clearfix"></div>
+                <br />
+                <div>
+                  <h1></i> D1商城后台管理系统</h1>
+                  <p>©2018 版权所有，CODEBOY.COM</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/login.js"></script>
+  </body>
+</html>

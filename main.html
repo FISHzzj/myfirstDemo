@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员主页</title>
+	<link rel="stylesheet" href="css/base_1.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<div id="container">
+		<!-- 左边 -->
+		<div class="left_col">
+			<div class="left_top">
+				<div class="title"><h1>D1商城后台管理</h1></div>
+				<div class="title_img">
+					<div class="title_pic"><img src="" alt="" ></div>
+					<div class="title_name">
+						<span>欢迎回来</span><br>
+						<span>超级管理员</span>
+					</div>
+				</div>
+				<div class="title_index">
+					<div class="backstage"><a href=".right_buttom" data-taggle="tab">后台首页</a></div>
+					<div class="adminor"><h3>数据管理</h3></div>
+					<div id="nav">
+						<ul class="nav_bg">
+							<li class="tit">商品管理</li>
+							<ul class="content fade ">
+								<li><a href=".productList" data-taggle="tab">商品列表</a></li>
+								<li><a href="#"  data-taggle="tab">多条件搜索</a></li>
+								<li><a href="#" data-taggle="tab">添加商品</a></li>
+							</ul>
+							<li class="tit">用户管理</li>
+							<ul class="content fade">
+								<li><a href="#">用户列表</a></li>
+								<li><a href="#">用户检索</a></li>
+							</ul>
+							<li class="tit">订单管理</li>
+							<ul class="content fade">
+								<li>订单列表</li>
+								<li>订单搜索</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="adminor"><h3>内容管理</h3></div>
+					<div id="nav">
+						<ul class="nav_bg">
+							<li class="tit">首页商品管理</li>
+							<ul class="content fade ">
+								<li>轮播广告</li>
+								<li>首页推荐</li>
+								<li>最新上架</li>
+								<li>热销单品</li>
+							</ul>
+							<li class="tit">功能页面</li>
+							<ul class="content fade">
+								<li>403错误页面</li>
+								<li>404错误页面</li>
+								<li>505错误页面</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="left_button">
+				<ul>
+					<li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-fullscreen"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-eye-close"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="clearfix"></div> -->
+		<!-- 右边 -->
+		<!-- 导航 -->
+		<div class="right_top">
+			<div class="nav_menu"><img src="img/dropDown.jpg" alt=""></div>
+			<div class="navbar">
+				<a href="#" class="bgAdmin">超级管理员</a>
+				<ul class="drop_down fade">
+					<li><a href="#">基本信息</a> </li>
+					<li><a href="#">用户设置</a></li>
+					<li><a href="#">使用说明</a></li>
+					<li><a href="#">退出登录</a></li>
+				</ul>
+			</div>
+			<div class="bgemail">
+				<a href="#"><img src="img/email.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="right_col">	
+			<!-- 实施访问量监控 -->
+			<div class="right_buttom" >
+				<table >
+					<tr>
+						<td>
+							<span>上架商品总数</span>
+							<h1 style="color:#E74C3C">24,382</h1>
+							<span><b>129%</b>较上个月</span>
+						</td>
+						<td>
+							<span>注册用户总数</span>
+							<h1>24,382</h1>
+							<span><b>23%</b>较上个月</span>
+						</td>
+						<td>
+							<span>已完成订单总数</span>
+							<h1 style="color: #1ABB9C">24,382</h1>
+							<span><b>12%</b>较上个月</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>当日PC端pv量</span>
+							<h1>24,382</h1>
+							<span><b>129%</b>较上个月</span>
+						</td>
+						<td>
+							<span>移动端pv量</span>
+							<h1 style="color:#E74C3C">24,382</h1>
+							<span><b>34%</b>较上个月</span>
+						</td>
+						<td>
+							<span>APP下载量</span>
+							<h1>24,382</h1>
+							<span><b>15%</b>较上个月</span>
+						</td>
+					</tr>
+				</table>
+				<div class="fold">
+					<img src="img/zhexiantu.jpg" alt="">
+				</div>
+			</div>
+					
+		<!-- //产品列表 -->
+			<div class="productList" >
+				<div class="text_d1"><h1>D1商品列表</h1></div>
+				<div class="plist">
+					<label for="page_size">每页显示的记录数</label>
+					<select name="" id="page_size">
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+						<option value="60"60></option>
+					</select>
+				</div>
+				<div class="searchtxt">
+					<input type="text" placeholder="请输入关键字" id="productKw">
+					<span class="imgSearch"><img src="img/search.jpg" alt=""></span>
+				</div>
+				<div class="allCheck">
+					<table>
+						<thead>
+							<tr>
+								<th><input type="checkbox" id="AllChecked">&nbsp全选</th>
+								<th>编号</th>
+								<th>图片</th>
+								<th style="width: 100px;">型号</th>
+								<th style="width: 200px">主标题</th>
+								<th>规格</th>
+								<th>单价</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<hr>
+						<tbody id="tbody1">
+							<!-- 动态加载数据 -->
+					<!-- 		<tr>
+								<td><input type="checkbox"></td>
+								<td>${lid}</td>
+								<td>图片</td>
+								<td>${spec}</td>
+								<td>${title}</td>
+								<td>${disk}</td>
+								<td>${price}</td>
+								<td><a href="#">删除</a><br><a href="#">更改</a><br><a href="#">插入</a></td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>	
+				<div class="pageCount">
+					<ul class="pls">
+						<!-- <li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li> -->
+					</ul> 
+				</div>
+				
+			</div>
+		
+
+		</div>
+			<!-- 添加两个div -->
+		<!-- 商品价格更新div -->
+		<div class="update-jumbotron" >
+			<h3>更新商品价格</h3>
+			<div class="upPrice" >
+				<ul>
+					<li>
+						<span>商品名称：</span><b class="titleName"></b>
+					</li>
+					<li><span>商品价格：</span> <input type="text"  class="txtPrice"></li>
+					<li >
+						<a href="#" class="btn btn-primary btn-xs btnUpdate" >更新</a>
+						<a href="#" class="btn btn-primary btn-xs btnCallOff" >取消</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 商品详情div -->
+		<div class="detailLists">
+			<h3>商品详情</h3>
+			<ul>
+				<li>产品详情：<span class="plid"></span> </li>
+				<li>产品名称：<span class="pname"></span></li>
+				<li>类别：<span class="category"></span></li>
+				<li>价格：<span class="price"></span></li>
+				<li>CPU:<span class="pos"></span></li>
+				<li>磁盘：<span class="pdisk"></span></li>
+				<li>
+					<a href="#" class="btn btn-primary btn-xs btnclose">关闭</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
